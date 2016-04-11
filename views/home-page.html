@@ -4,7 +4,14 @@
 
         </div>
         <div class="row">
-               <h1>Hello world</h1>
+            <div class="jumbotron">
+                <h3>Current offers</h3>
+                <ul class="list-group">
+                    <div *ngFor="#offer of offers">
+                        <li class="list-group-item"><span class="badge">{{offer.price}} $</span> {{offer.name}}</li>
+                    </div>
+                </ul>
+            </div>
 
         </div>
 
