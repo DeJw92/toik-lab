@@ -3,6 +3,7 @@ import {RouteConfig} from "angular2/router";
 import {HomePageComponent} from "./home-page";
 import {ROUTER_DIRECTIVES} from "angular2/router";
 import {ProductsComponent} from "./products";
+import {LoginComponent} from "./login";
 
 
 @Component({
@@ -12,7 +13,8 @@ import {ProductsComponent} from "./products";
 })
 @RouteConfig([
     {path:'/', name:'HomePage', component: HomePageComponent, useAsDefault: true},
-    {path:'/products', name:'Products', component: ProductsComponent}
+    {path:'/products', name:'Products', component: ProductsComponent},
+    {path:'/login', name:'LoginPage', component: LoginComponent}
 ])
 export class App {
 
