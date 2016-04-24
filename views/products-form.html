@@ -1,5 +1,5 @@
 <div>
-    <h1>Add game that you want subscribe</h1>
+    <h1>Add game to your subscribe list</h1>
 
     <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
         <div class="form-group">
@@ -15,7 +15,7 @@
     </form>
 
     <div class="jumbotron" style="margin:10px;">
-        <h3>Offers your want to subscribe :</h3>
+        <h3>Your subscribe list : </h3>
         <ul class="list-group">
             <div *ngFor="#offer of offers">
                 <li class="list-group-item"><span class="badge">{{offer.price}} $</span> {{offer.name}}</li>
