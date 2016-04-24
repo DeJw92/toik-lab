@@ -4,11 +4,11 @@
     <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="control-group" ngControl="name">
+            <input type="text" class="control-group" ngControl="name" required>
         </div>
         <div class="form-group">
             <label for="price">Price</label>
-            <input type="text" class="control-group" ngControl="price">
+            <input type="text" class="control-group" ngControl="price" required>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
 
