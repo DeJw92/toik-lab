@@ -1,11 +1,14 @@
 import {Component, OnInit} from "angular2/core";
 import {Offer} from "./offer";
 import {Http} from "angular2/http";
+import {isLoggedin} from "./is-loggedin";
+import {CanActivate} from "angular2/router";
 
 @Component({
     selector: 'home-page',
     templateUrl: 'views/home-page.html'
 })
+@CanActivate(() => isLoggedin())
 export class HomePageComponent implements OnInit{
     offers:Offer[] = [];
     
